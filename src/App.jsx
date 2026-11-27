@@ -101,7 +101,15 @@ function App() {
 
                 <div className="food-bottom">
                   <strong>{dish.price}</strong>
-                  <a href="#contact">Order Now →</a>
+                  <a
+  href={`https://wa.me/919144031033?text=${encodeURIComponent(
+    `Hello Food Paradise! I want to order ${dish.name}. Please confirm my order.`
+  )}`}
+  target="_blank"
+  rel="noreferrer"
+>
+  Order Now →
+</a>
                 </div>
               </div>
             </div>
